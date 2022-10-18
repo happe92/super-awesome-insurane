@@ -1,0 +1,21 @@
+@use "abstract/variables" as *;
+@use "layout/header";
+@use "layout/navbar";
+@use "layout/card";
+@use "layout/footer";
+@use "layout/article";
+@use "components/buttons";
+@use "pages/contact";
+body
+{
+    font-family: 'fira-sans';
+    font-size: 1.5rem;
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Frank Ruhl Libre';
+    font-weight: 900;
+}
+.main-container {
+    background-color: darkgray;
+}

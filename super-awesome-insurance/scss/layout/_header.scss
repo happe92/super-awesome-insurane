@@ -1,0 +1,98 @@
+@use "../abstract/variables" as*;
+
+
+.top-header{
+
+    /* ----We´ve got you coverd + join +family picture--------------*/
+    
+    .header-article{
+        background-color: $colortres;
+        padding: .8em;
+        padding-top: 2.5em;
+        height: 28em;
+        
+        padding-bottom: 0;
+        
+        .article-title{
+            font-size: 1.8em;
+            @include big-screen {
+                padding-top: 1.5em;
+                max-width: 60%;
+            }
+        }
+        .article-text{
+            padding-top: 1.5em;
+            font-size: 0.6em;
+            line-height: 1.5em;
+            letter-spacing: 0.07em;
+            max-width: 95%;
+            
+            .white-text{
+                color: white;
+            }
+            @include big-screen {
+                max-width: 60%;
+            }
+        }
+        .header-img{
+            padding-top: 1.75em;
+            width: 100%;
+
+            @include big-screen {
+                padding-top: 0;
+                width: 60%;
+                position:absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        @include big-screen {
+            height: 100%;
+            width: 50%;
+            padding-top: 0;
+            position:relative;
+            padding-left: 5em;
+        }
+    }
+   /* ----Box learn more & boc joint today--------------*/
+    .header-container{
+        .container-box{
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .box-text{
+                font-size: .6em;
+                letter-spacing: 0.05em;
+            }
+           .box-title{
+                line-height: 1.8em;
+                letter-spacing: 0.05em;
+                font-size: 1.5em;
+                color: white;
+            }
+            @include big-screen {
+                height: 50%;
+                width: 100%;
+            }
+        }
+        .learn{
+            background-color: $coloruno;
+        }
+        .join{
+            background-color: $colordos;
+        }
+        @include big-screen {
+            width: 50%;
+        }
+    }
+    
+    @include big-screen {
+        height: 85vh;
+        display: flex;
+    }
+}
+
+

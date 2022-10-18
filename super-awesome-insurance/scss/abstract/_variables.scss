@@ -1,0 +1,8 @@
+$coloruno: #F17949;
+$colordos: #FAB131;
+$colortres: #C7DDEA;
+$colorquatro: #A9A19E;
+
+@mixin big-screen {
+    @media (min-width: 900px) { @content; }
+  }

@@ -1,0 +1,38 @@
+@use "../abstract/variables" as *;
+.footer-container{
+    .container-div{
+        background-color: gray;
+        height: 9em;
+
+        .div-text{
+            visibility: hidden;
+        }
+    }
+}
+.contact-footer {
+    
+    .footer-article {
+        width: 80%;
+        height: 8rem;
+        background-color: $colordos;
+        color: white;
+        z-index: 1;
+        padding: .5em;
+        position: absolute;
+        margin-top: -6rem;
+        margin-left: 5%;
+        padding-bottom: 3rem;
+        .article-title {
+            font-size: 3.3rem;
+        }
+        .article-address {
+            line-height: 2rem;
+        }
+    }
+    .map-information {
+        width: 100%;
+        height: 20rem;
+        filter: grayscale(100%) invert(100%);
+        z-index: 2;
+    }
+}

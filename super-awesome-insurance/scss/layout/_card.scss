@@ -1,0 +1,64 @@
+@use "../abstract/variables" as*;
+.container-list {
+    .card-picture1 {
+        background-color: $colortres;
+        
+    }
+    .card-picture2 {
+        background-color: $colordos;
+    }
+    .card-picture3 {
+        background-color: $coloruno;
+        
+    }
+    .list-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        width: 80%;
+        text-align: center;
+        border-radius: .5em;
+        margin-top: 6rem;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 8px 6px rgba(0, 0, 0, .15);
+        .card-picture {
+            position: absolute;
+            margin-top: -3rem;
+            border-radius: .5em;
+            width: 70%;
+            height: 40vh;
+            overflow: hidden;
+            text-align: center;
+            @include big-screen {
+                max-width: 25%;
+            }
+            .picture-img{
+                width: 50%;
+                overflow: hidden;
+            }
+            .picture-img-old-man{
+                width: 70%;
+            }
+        }
+        
+        .card-article {
+            padding: 3rem;
+            padding-bottom: 3rem;
+            padding-top: 40vh;
+        }
+        
+        @include big-screen {
+            max-width: 30%;
+        }
+        
+            
+        
+    }
+    padding-bottom: 3em;
+    @include big-screen {
+        display: flex;
+    }
+    
+}

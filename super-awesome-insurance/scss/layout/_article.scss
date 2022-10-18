@@ -1,0 +1,123 @@
+@use "../abstract/variables" as*;
+
+.main-container{
+    .main-container-article{
+        padding: 1em;
+        .article-info{
+            display: flex;
+    
+            .info-title{
+            color: white;
+            font-size: 3rem;
+            }
+            
+        }
+        .container-text{
+        margin-top: 1.5rem;
+        font-size: .9rem;
+        line-height: 1.5em;
+        }
+    }
+
+    .container-article{
+        background-color:$colordos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        @include big-screen {
+            padding: 0 15em;
+     
+         }
+    
+      
+    
+        .article-title{
+            color:white;
+            font-size: 3rem;
+            font-weight:1100 ;
+            padding: 3.5rem;
+          }
+          .article-text{
+            padding:0 2rem;
+            text-align: center;
+          }
+          .article-text:last-child{
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+          }
+    }
+}
+
+
+
+.article-container{
+    
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include big-screen {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100vh;
+    }
+    .container-div{
+        display: flex;
+        height: 10em;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        
+        .container-title{
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+        .div-text{
+            font-weight: 800;
+            color: rgb(90, 90, 90);
+        }
+        @include big-screen{
+            height: 50%;
+            width: 33.3%;
+        }
+    }
+    .title{
+        background-color:$colortres;
+    }
+    .div-num{
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        font-size: 2.5rem;
+        color: gray;
+    }
+    .one{
+        .div-text{
+            max-width: 60%;
+        }
+    }
+    .two{
+        background-color: rgb(240, 240, 240);
+    }
+    .tre{
+        .div-text{
+            max-width: 70%;
+        }
+    }
+    .four{
+        background-color: $coloruno;
+    }
+    
+}
+    
+
+
+
+
+
+
+

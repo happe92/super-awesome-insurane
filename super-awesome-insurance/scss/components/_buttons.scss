@@ -1,0 +1,35 @@
+/* -------Top button------ */
+
+.article-button{
+    margin-top: 3rem;
+    margin-left: .4rem;
+    padding:.8rem;
+    border-style: none;
+    background-color: white;
+    width: 30%;
+    border-radius: 999px ;
+    font-weight: bold;
+    
+    
+}
+.info-button{
+    height: 0;
+    visibility: hidden;
+}
+
+.form-button{
+    margin-top: 2rem;
+    justify-self: end;
+    padding:.8rem;
+    border-style: none;
+    background-color: white;
+    width: 35%;
+    border-radius: 999px ;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-right: 1rem;
+     /*aj aj på float, men hittar ingen annan lösning*/
+    
+    
+}
+
